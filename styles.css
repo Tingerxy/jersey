@@ -166,3 +166,80 @@ footer .services .service p {
         padding: 3rem 5rem;
     }
 }
+
+/* Ajoutez ceci à votre styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #f5f5f5;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+nav .onglets a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 1rem;
+}
+
+header {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.main {
+    padding: 2rem;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category {
+    width: 45%;
+    margin-bottom: 2rem;
+}
+
+.category img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card .left, .card .right {
+    padding: 1rem;
+}
+
+.card .right img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
