@@ -21,20 +21,20 @@ nav {
 nav h1 {
     color: #717171;
     font-family: 'Playfair Display', serif;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 nav .onglets {
     margin-top: 3px;
-    margin-left: 300px;
+    margin-left: 2rem;
 }
 
 nav .onglets a {
     text-decoration: none;
     color: #000;
-    margin-right: 10px;
+    margin-right: 1rem;
     border-bottom: 1px solid #000;
-    padding-bottom: 5px;
+    padding-bottom: 0.5rem;
 }
 
 header {
@@ -44,35 +44,35 @@ header {
     background: url('images/fond.jpg');
     background-size: cover;
     color: #fff;
-    padding: 80px;
+    padding: 5rem 2rem;
 }
 
 header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 50px;
+    font-size: 3rem;
 }
 
 header h4 {
-    margin-top: -20px;
-    font-size: 20px;
+    margin-top: -1rem;
+    font-size: 1.5rem;
     text-align: center;
     border-bottom: 1px solid #fff;
 }
 
 header button {
-    padding: 10px 20px;
+    padding: 0.5rem 1rem;
     background-color: #fff;
     color: #000;
     border: none;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
     outline: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: 'Playfair Display', serif;
     cursor: pointer;
 }
 
 .main {
-    margin-top: 40px;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,47 +82,87 @@ header button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 
 .main .content .card .left {
-    flex: 0 0 30%;
-    padding: 20px;
+    flex: 0 0 90%;
+    padding: 1rem;
     background-color: white;
     color: black;
 }
 
 .main .content .card .right img {
-    height: 300px;
-    width: 400px;
-    margin-top: 5px;
+    width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
 }
 
 footer {
-    margin-top: 40px;
+    margin-top: 2rem;
     border-top: 5px solid #6f6f6f;
     background-color: #EFF1F1;
     color: black;
-    padding: 30px 100px;
+    padding: 2rem 1rem;
+    text-align: center;
 }
 
 footer h1 {
     font-family: 'Playfair Display', serif;
     border-bottom: 1px solid white;
     width: 20%;
-    padding-bottom: 5px;
+    padding-bottom: 0.5rem;
+    margin: 0 auto;
 }
 
 footer .services {
-    margin-top: -10px;
+    margin-top: -0.5rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 footer .services .service {
-    margin-right: 30px;
+    margin-right: 1.5rem;
 }
 
 footer .services .service p {
-    max-width: 300px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+    nav .onglets {
+        margin-left: 3rem;
+    }
+
+    nav h1 {
+        font-size: 2.5rem;
+    }
+
+    header {
+        padding: 7rem 3rem;
+    }
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    header h4 {
+        font-size: 2rem;
+    }
+
+    .main .content .card .left {
+        flex: 0 0 40%;
+    }
+
+    .main .content .card .right img {
+        height: 300px;
+        width: 400px;
+    }
+
+    footer {
+        padding: 3rem 5rem;
+    }
 }
